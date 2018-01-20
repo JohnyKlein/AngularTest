@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+<input type="text" [(ngModel)]="coisa"> <!--Diretiva outro pacote-->
+<button type="button" (click)="addLista()">Adicionar na lista</button>
+
+<ul>
+  <li *ngFor="let item of coisas">  <!--Diretiva-->
+    {{item}} 
+  </li>
+</ul>
